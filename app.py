@@ -12,7 +12,7 @@ USER = os.getenv("USER")
 PASSWORD = os.getenv("PASSWORD")
 
 @app.route('/')
-def get_secrets():
+def index():
     return jsonify({
         "hello": "Hello",
         "first_page": "/data",
