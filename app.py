@@ -11,6 +11,14 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 USER = os.getenv("USER")
 PASSWORD = os.getenv("PASSWORD")
 
+@app.route('/')
+def get_secrets():
+    return jsonify({
+        "hello": "Hello",
+        "first_page": "/data",
+        "second_page": "/secrets"
+    })
+
 @app.route('/data')
 def get_data():
     with open('data.json', 'r') as file:
