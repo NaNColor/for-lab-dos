@@ -1,0 +1,6 @@
+{
+  "name": "OriginalName",
+  "description": "Data created only for k8s lab",
+  "year": 2024,
+  "kubernetes": true
+}
